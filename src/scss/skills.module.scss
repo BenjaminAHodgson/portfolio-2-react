@@ -1,0 +1,47 @@
+.skills {
+  margin: 0 auto;
+  text-align: center;
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 1200px;
+    max-width: 100%;
+    margin: 2rem auto;
+  }
+  h5 {
+    line-height: 1;
+  }
+  &__counter {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  &__detail {
+    border-radius: 10px;
+  }
+  &__icon {
+    display: block;
+    margin: 0 auto;
+  }
+  &__skill {
+    position: relative;
+    width: 350px;
+    margin: 10px;
+    background: rgba(white, .5);
+    box-shadow: 0 0 10px rgba(black, .1);
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    ul {
+      list-style: none;
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 0.2rem 0;
+      }
+    }
+  }
+}

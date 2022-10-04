@@ -1,0 +1,47 @@
+.title {
+  margin-top: 1rem;
+  text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+    }
+  span {
+    display: inline-block;
+    opacity: 0;
+  }
+}
+
+.experience {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  justify-content: center;
+  h4,
+  h5 {
+   // font-family: $alt-font;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  h5 {
+    line-height: 1;
+  }
+}
+
+.counter {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  p {
+    strong {
+      position: relative;
+      display: inline-block;
+      .underline {
+        position: absolute;
+        display: block;
+        bottom: -2px;
+        height: 1px;
+        //background: $body-color;
+      }
+    }
+  }
+}

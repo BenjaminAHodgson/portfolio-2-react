@@ -1,0 +1,30 @@
+.form {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  width: 300px;
+  max-width: 100%;
+  padding: 0rem 3rem;
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  input, textarea {
+    width: 100%;
+    appearance: none;
+    border: none;
+    box-shadow: none;
+
+    background-color: rgba(skyblue, .2);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+}
