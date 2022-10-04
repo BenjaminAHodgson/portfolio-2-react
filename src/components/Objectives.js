@@ -2,10 +2,10 @@ import styles from "../scss/skills.module.scss";
 export const Objectives = () => {
   return (
     <div>
-      <div class={styles.skills__inner}>
-        <div class={styles.skills__skill + " stagger"}>
+      <div className={styles.skills__inner}>
+        <div className={styles.skills__skill + " stagger"}>
           <svg
-            class={styles.skills__icon}
+            className={styles.skills__icon}
             xmlns="http://www.w3.org/2000/svg"
             height="50"
             viewBox="0 0 630 630"
@@ -13,7 +13,7 @@ export const Objectives = () => {
             <rect width="630" height="630" fill="#f7df1e" />
             <path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z" />
           </svg>
-          <div class={styles.skills__detail}>
+          <div className={styles.skills__detail}>
             <ul>
               <li>
                 <strong>Objective:</strong> Further skills in modern Javascript
@@ -29,7 +29,7 @@ export const Objectives = () => {
             </ul>
           </div>
         </div>
-        <div class={styles.skills__skill + " stagger"}>
+        <div className={styles.skills__skill + " stagger"}>
           <svg
             className={styles.skills__icon}
             id="logo-jamstack"
@@ -38,13 +38,13 @@ export const Objectives = () => {
             fill="none"
           >
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M.7 48.7A48.4 48.4 0 0149.2.2h48.5v48.5a48.4 48.4 0 11-97 0zm13.5 2a35 35 0 0033 33v-33h-33zm37 0h33a35 35 0 01-33 33v-33zm33-37h-33v33h33v-33z"
               fill="#F0047F"
             ></path>
           </svg>
-          <div class={styles.skills__detail}>
+          <div className={styles.skills__detail}>
             <ul>
               <li>
                 <strong>Objective:</strong> Further skills in Javascript
@@ -69,9 +69,9 @@ export const Objectives = () => {
           </div>
         </div>
 
-        <div class={styles.skills__skill + " stagger"}>
+        <div className={styles.skills__skill + " stagger"}>
           <svg
-            class={styles.skills__icon}
+            className={styles.skills__icon}
             height="50"
             preserveAspectRatio="xMidYMid"
             viewBox="0 -1.428 255.582 290.108"
@@ -94,7 +94,7 @@ export const Objectives = () => {
               <path d="m128.457 48.626c35.144 0 65.827 19.086 82.262 47.456l-.16-.273-41.35 23.808c-8.146-13.793-23.08-23.102-40.213-23.294l-.54-.003c-26.125 0-47.305 21.18-47.305 47.305a47.08 47.08 0 0 0 6.239 23.47c8.154 14.235 23.483 23.836 41.067 23.836 17.693 0 33.109-9.723 41.221-24.11l-.197.345 41.287 23.918c-16.255 28.13-46.518 47.157-81.253 47.536l-1.058.006c-35.255 0-66.025-19.204-82.419-47.724-8.003-13.923-12.582-30.064-12.582-47.277 0-52.466 42.532-95 95-95z" />
             </g>
           </svg>
-          <div class={styles.skills__detail}>
+          <div className={styles.skills__detail}>
             <h5></h5>
             <ul>
               <li>

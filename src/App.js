@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   useLocation,
   Navigate,
-  NavLink
+  NavLink,
 } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Clouds } from "./art/Clouds";
@@ -24,19 +24,19 @@ const navItems = [
     path: "/experience",
     name: "Experience",
     next: "Skills",
-    props: { end: "" }
+    props: { end: "" },
   },
   {
     path: "/skills",
     name: "Skills",
     next: "Objectives",
-    props: ""
+    props: "",
   },
   {
     path: "/objectives",
     name: "Objectives",
-    props: ""
-  }
+    props: "",
+  },
 ];
 
 export default function App() {
@@ -47,7 +47,9 @@ export default function App() {
   const [nextPage, setNextPage] = useState(false);
 
   useEffect(() => {
+    document.title = "Benjamin Hodgson";
     if (activePage) {
+      document.title = activePage.name + " - Benjamin Hodgson";
       setNextPage(
         navItems.find((item) => {
           return item.name === activePage.next;
