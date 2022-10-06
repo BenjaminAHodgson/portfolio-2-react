@@ -78,11 +78,11 @@ export default function App() {
           <div className="content">
             <Routes>
               <Route path="/" element={<Navigate to="experience" />} end />
-              <Route path="experience" element={<Experience />} />
-              <Route path="skills" element={<Skills />} />
-              <Route path="objectives" element={<Objectives />} />
-              <Route path="projects" element={<Projects />} />
-              <Route path="contact" element={<Form />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/objectives" element={<Objectives />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Form />} />
             </Routes>
           </div>
         </CSSTransition>
