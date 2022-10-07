@@ -1,11 +1,6 @@
 import { useState } from "react";
+import { encode } from "../inc/util";
 import styles from "../scss/form.module.scss";
-
-const encode = (data) => {
-  return Object.keys(data)
-    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
 
 export const Form = () => {
   const [form, setForm] = useState({});
@@ -45,11 +40,12 @@ export const Form = () => {
         data-netlify="true"
         onSubmit={handleSubmit}
       >
-        <h2>{status.title}</h2>
+        <h2 className="stagger">{status.title}</h2>
         {status.message && <p>{status.message}</p>}
         {!status.validated && (
           <div>
             <input
+            className="stagger"
               placeholder="Name*"
               type="text"
               name="name"
@@ -57,6 +53,7 @@ export const Form = () => {
               onChange={handleChange}
             />
             <input
+            className="stagger"
               placeholder="Email*"
               type="email"
               name="email"
@@ -64,12 +61,13 @@ export const Form = () => {
               onChange={handleChange}
             />
             <textarea
+            className="stagger"
               placeholder="What are you enquiring about?"
               name="message"
               required
               onChange={handleChange}
             ></textarea>
-            <button className="btn btn-primary" type="submit">
+            <button className="btn btn-primary stagger" type="submit">
               Send
             </button>
           </div>

@@ -1,4 +1,5 @@
 import ReactAnime from "react-animejs";
+import '../scss/art.scss';
 
 export const Sun = () => {
   const { Anime, stagger } = ReactAnime;
@@ -15,10 +16,10 @@ export const Sun = () => {
         }
       ]}
     >
-      <div className="sun">
-        <span className="layer layer--1"></span>
-        <span className="layer layer--2"></span>
-        <span className="layer layer--3"></span>
+      <div className='sun'>
+        <span className="layer"></span>
+        <span className="layer"></span>
+        <span className="layer"></span>
       </div>
     </Anime>
   );

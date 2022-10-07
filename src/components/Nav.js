@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import '../scss/nav.scss';
 
 export const Nav = (props) => {
   const navItems = props.navItems;
@@ -13,13 +14,7 @@ export const Nav = (props) => {
           Personal Github
         </a>
         <h1>Benjamin Hodgson</h1>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="mailto:ben_hodgson.13@hotmail.com"
-        >
-          Contact me
-        </a>
+        <NavLink to="contact">Contact me</NavLink>
       </div>
       <ul className="nav__items">
         {navItems.map((item) => {

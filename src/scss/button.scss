@@ -1,0 +1,23 @@
+.btn-primary {
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+    width: 200px;
+    max-width: 100%;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 10px;
+    transform-origin: center center;
+    transition: all .3s ease;
+    text-decoration: none;
+  
+    .arrow {
+      border-left-color: white;
+    }
+  
+    &:hover {
+      color: white;
+      transform: scale(1.05);
+    }
+  }

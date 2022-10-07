@@ -19,7 +19,7 @@
   justify-content: center;
   h4,
   h5 {
-   // font-family: $alt-font;
+   // font-family: var(--alt-font);
     text-transform: uppercase;
     text-decoration: underline;
   }
@@ -40,7 +40,7 @@
         display: block;
         bottom: -2px;
         height: 1px;
-        //background: $body-color;
+        //background: var(--body-color);
       }
     }
   }

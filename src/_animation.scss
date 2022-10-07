@@ -1,0 +1,46 @@
+.stagger {
+  @for $i from 1 to 10 {
+    &:nth-child(#{$i}) {
+      transition: transform 0.65s ($i * 0.035s) cubic-bezier(0.29, -1, 0, 1.25),
+        opacity 0.3s ($i * 0.035s) cubic-bezier(0.79, -0.04, 0.3, 1.45);
+    }
+  }
+}
+.fade-exit {
+  opacity: 0;
+  .stagger {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+}
+
+.fade-enter {
+  display: block;
+  opacity: 1;
+}
+
+.fade-enter-done {
+  opacity: 1;
+  .stagger {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fade-exit-done {
+  display: none;
+  .stagger {
+    display: none;
+  }
+}
+
+.ready {
+  .stagger {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.stagger {
+  transform: translateY(50%);
+  opacity: 0;
+}

@@ -1,0 +1,21 @@
+[
+    {
+        "path": "/experience",
+        "name": "Experience",
+        "next": "Skills",
+        "props": {
+            "end": ""
+        }
+    },
+    {
+        "path": "/skills",
+        "name": "Skills",
+        "next": "Objectives",
+        "props": ""
+    },
+    {
+        "path": "/objectives",
+        "name": "Objectives",
+        "props": ""
+    }
+]

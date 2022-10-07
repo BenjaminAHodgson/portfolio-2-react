@@ -1,6 +1,8 @@
+import '../scss/art.scss';
+
 export const Clouds = () => {
   return (
-    <div className="bg-wrap">
+    <div className="bgWrap">
       <div className="x1">
         <div className="cloud"></div>
       </div>

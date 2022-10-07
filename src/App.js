@@ -1,3 +1,4 @@
+// Packages
 import { useEffect, useState, useRef } from "react";
 import {
   BrowserRouter as Router,
@@ -10,6 +11,8 @@ import {
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Clouds } from "./art/Clouds";
 import { Sun } from "./art/Sun";
+
+// Components
 import { Experience } from "./components/Experience";
 import { Objectives } from "./components/Objectives";
 import { Projects } from "./components/Projects";
@@ -17,27 +20,15 @@ import { Skills } from "./components/Skills";
 import { Nav } from "./components/Nav";
 import { Form } from "./components/Form";
 
-import "./styles.scss";
+// Global Styles
+import "./_variables.scss"
+import './_animation.scss';
+import "./_global.scss";
+import './scss/button.scss';
 
-const navItems = [
-  {
-    path: "/experience",
-    name: "Experience",
-    next: "Skills",
-    props: { end: "" },
-  },
-  {
-    path: "/skills",
-    name: "Skills",
-    next: "Objectives",
-    props: "",
-  },
-  {
-    path: "/objectives",
-    name: "Objectives",
-    props: "",
-  },
-];
+// Inc
+import navItems from './inc/navigation.json';
+
 
 export default function App() {
   const location = useLocation();
@@ -60,6 +51,7 @@ export default function App() {
       setNextPage(false);
     };
   }, [activePage]);
+  
   const [outerClass, setOuterClass] = useState("ready");
 
   return (
